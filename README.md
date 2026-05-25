@@ -6,7 +6,7 @@ Includes CLI-based message production/consumption and a Python producer-consumer
 
 ## Requirements
 - Docker and Docker Compose
-- Python 3.14
+- Python 3.x
 - confluent-kafka library
 
 ## Setup
@@ -36,3 +36,17 @@ docker compose down
 ## Files
 - `docker-compose.yml` — Kafka KRaft single broker setup
 - `kafka_producer_consumer.py` — Produces and consumes 10 fake log events
+
+## Screenshots
+
+### 1. Docker Containers Running
+![Docker PS](Screenshots/Containers_running.jpeg)
+
+### 2. Producer — Manual CLI Messages
+![Producer](Screenshots/Messages_produced_manually.jpeg)
+
+### 3. Consumer — Reading CLI Messages
+![Consumer](Screenshots/Messages_consumed_manually.jpeg)
+
+### 4. Python Script Output
+![Python Output](Screenshots/Messages_produced_consumed_pythonscript.jpeg)
